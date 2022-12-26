@@ -37,11 +37,6 @@ bindsym $mod+Shift+q kill
 bindsym $mod+d exec rofi -show drun -show-icons
 bindsym $mod+t exec rofi -show run -show-icons
 bindsym $mod+g exec rofi -show
-# bindsym $mod+d exec rofi -show run -config /home/tk/.config/i3/rofi -opacity "80" 
-# There also is the (new) i3-dmenu-desktop which only displays applications
-# shipping a .desktop file. It is a wrapper around dmenu, so you need that
-# installed.
-# bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 
 # change focus
 bindsym $mod+h focus left
@@ -149,6 +144,18 @@ mode "resize" {
 }
 
 bindsym $mod+r mode "resize"
+
+# Media Keys
+bindsym XF86AudioLowerVolume exec "pactl set-sink-volume alsa_output.pci-0000_00_1b.0.analog-stereo -1%"
+bindsym XF86AudioRaiseVolume exec "pactl set-sink-volume alsa_output.pci-0000_00_1b.0.analog-stereo +1%"
+bindsym XF86AudioMute exec "pactl set-sink-mute alsa_output.pci-0000_00_1b.0.analog-stereo toggle"
+
+bindsym XF86MonBrightnessUp exec --no-starup-id "sudo brightnessctl s +10%"
+bindsym XF86MonBrightnessDown exec --no-startup-id "sudo brightnessctl s 10%- "
+
+bindsym XF86KbdBrightnessUp exec "sudo brightnessctl --device='smc::kbd_backlight' set +10%"
+bindsym XF86KbdBrightnessDown exec "sudo brightnessctl --device='smc::kbd_backlight' set 10%-"
+
 
 exec_always picom
 exec_always xrdb ~/.Xresources
