@@ -1,0 +1,4 @@
+//configuration {
+  //font: "Liga SFMono Nerd Font";
+//}
+@theme "spotlight.rasi"

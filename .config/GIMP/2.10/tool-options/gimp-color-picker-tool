@@ -1,0 +1,6 @@
+# GIMP gimp-color-picker-tool options
+
+(foreground (color-rgb 0.51372551918029785 0.75294119119644165 0.57254904508590698))
+(average-radius 33)
+
+# end of gimp-color-picker-tool options
