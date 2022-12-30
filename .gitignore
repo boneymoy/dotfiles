@@ -8,7 +8,8 @@
 !.config/picom
 !.config/ranger/*
 !.config/1Password/*
-!.config/polybar/*
+!.config/polybar/launch.sh
+!.config/polybar/config
 !.gitignore
 
 
