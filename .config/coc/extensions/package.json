@@ -1,9 +1,0 @@
-{
-  "dependencies": {
-    "coc-pyright": ">=1.1.284",
-    "coc-rust-analyzer": ">=0.71.0",
-    "coc-fish": ">=1.0.11"
-  },
-  "disabled": [],
-  "locked": []
-}

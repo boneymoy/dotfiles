@@ -1,6 +1,0 @@
-system: {}
-wine:
-  d3d_extras: false
-  dxvk: false
-  dxvk_nvapi: false
-  vkd3d: false
