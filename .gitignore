@@ -1,0 +1,13 @@
+# ignore everything
+*
+# except config folder
+!.config/nvim/*
+!.config/i3/*
+!.config/fish/*
+!.config/starship.toml
+!.config/picom
+!.config/ranger/*
+!.config/1Password/*
+!.gitignore
+
+
