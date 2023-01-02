@@ -155,10 +155,10 @@ bindsym $mod+Shift+9 move container to workspace $ws9
 bindsym $mod+Shift+0 move container to workspace $ws10
 
 #start application in certain ws
-for_window [class="Spotify"] move to workspace $ws10
+for_window [class="Spotify"] move to workspace $ws9
 assign [class="Firefox"] $ws1
 assign [class='VirtualBox'] $ws5
-for_window [class="Evince"] move to workspace $ws3
+# for_window [class="Evince"] move to workspace $ws3
 #for_window [class="Zathura"] move to workspace $ws3
 
 # reload the configuration file
@@ -231,7 +231,7 @@ bindsym $mod+PgUp exec systemctl reboot
 exec_always xrandr --output DVI-D-0 --off --output HDMI-0 --off --output DP-5 --off --output DP-4 --mode 1680x1050 --pos 1968x0 --rotate normal --output DP-3 --off --output DP-2 --mode 1920x1200 --pos 48x0 --rotate normal --output DP-1 --off --output DP-0 --off
 
 #Wallpaper
-exec_always feh --bg-fill /home/tk/Pictures/dream.jpg
+exec_always feh --bg-fill /home/tk/Pictures/dark_mountain.jpg
 
 exec_always picom 
 
